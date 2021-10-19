@@ -3,12 +3,12 @@ from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parent.parent))
 
-from model.functions import square
+from model.functions import divide_by_two
 
 
-def test_square():
+def test_divide_by_two():
     # When
-    subject = square(4)
+    subject = divide_by_two(4)
 
     # Then
-    assert subject == 16
+    assert subject == 2
